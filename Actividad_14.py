@@ -52,8 +52,24 @@ while opcion != 4:
                             dorsal += 1
                             print("Se agregó al particpante con éxito")
             case 2:
-                if len(participantes) < 0:
+                if len(participantes) == 0:
                     print("No se ha agregado a ningún participante")
                     continue
+                nombre_ordenado = ordenar_nombre(list(participantes.values()))
+                print("Particpantes ordenados por nombre:")
+                for clave, datos in nombre_ordenado:
+                    print(f"{datos['nombre']}: (dorsal:{clave} edad: {datos['edad']}, categoría: {datos['categoria']}")
+            case 3:
+                if len(participantes) == 0:
+                    print("No se ha agregado a ningún participante")
+                    continue
+                edad_ordenado = ordenar_edad(list(participantes.values()))
+                print("participantes ordenados por edad:")
+                for clave, datos in edad_ordenado:
+                    print(f"{datos['nombre']}: (dorsal:{clave} edad: {datos['edad']}, categoría: {datos['categoria']}")
+            case 4:
+                print("Saliendo")
+            case __:
+                print("Opción no disponible")
     except ValueError:
         print("Dato ingresado no válido")

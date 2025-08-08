@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2168909f-d1b7-48c0-bfe4-46d1019af02e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Actividad 14.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Actividad_14.py" afterDir="false" />
+    <list default="true" id="2168909f-d1b7-48c0-bfe4-46d1019af02e" name="Changes" comment="agregar funciones de ordenamiento, opcion 1">
+      <change beforePath="$PROJECT_DIR$/Actividad_14.py" beforeDir="false" afterPath="$PROJECT_DIR$/Actividad_14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "J-Mario-Garcia-05"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/J-Mario-Garcia-05/Actividad-14.git",
+    "accountId": "19dff7a0-6482-46dd-9416-64b714f2d235"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
@@ -64,11 +71,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754669032900</updated>
-      <workItem from="1754669034105" duration="1785000" />
+      <workItem from="1754669034105" duration="2164000" />
     </task>
+    <task id="LOCAL-00001" summary="agregar funciones de ordenamiento, opcion 1">
+      <option name="closed" value="true" />
+      <created>1754670939075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754670939075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agregar funciones de ordenamiento, opcion 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregar funciones de ordenamiento, opcion 1" />
   </component>
 </project>
