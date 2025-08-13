@@ -16,7 +16,7 @@ def ordenar_edad(edades):
     mayores = [x for x in edades if x['edad'] > pivote['edad']]
     return ordenar_edad(menores) + iguales + ordenar_edad(mayores)
 
-participantes = {}
+participantes = []
 dorsal = 1001
 opcion = 0
 while opcion != 4:
@@ -30,8 +30,8 @@ while opcion != 4:
         match opcion:
             case 1:
                 cantidad = int(input("¿Cuántos participante desea agregar? (1-10): "))
-                if cantidad < 0 or cantidad > 10:
-                    print("Cantidad ingresada fuera de rango")
+                if cantidad < 1 or cantidad > 10:
+                    print("La cantidad debe estar entre 1 y 10")
                     continue
                 for i in range(cantidad):
                     print(f"Datos del participante {i + 1}:")
@@ -40,19 +40,20 @@ while opcion != 4:
                     if edad < 10 or edad > 60:
                         print("Edad ingresada no es válida")
                     else:
-                        categoria = input("\tCategoria: ")
-                        if categoria.lower() != "juvenil" and categoria.lower() != "adulto" and categoria.lower() != "master":
+                        categoria = input("\tCategoria: ").lower()
+                        if categoria not in ["juvenil", "adulto", "master"]:
                             print("La categoria que ingresó no existe")
                         else:
-                            participantes[dorsal] = {
+                            participantes.append({
+                                "dorsal": dorsal,
                                 "nombre": nombre,
                                 "edad": edad,
                                 "categoria": categoria,
-                            }
+                            })
                             dorsal += 1
-                            print("Se agregó al particpante con éxito")
+                            print("Se agregó al particpante correctamente")
             case 2:
-                if len(participantes) == 0:
+                if not participantes:
                     print("No se ha agregado a ningún participante")
                     continue
                 nombre_ordenado = ordenar_nombre(list(participantes.values()))
