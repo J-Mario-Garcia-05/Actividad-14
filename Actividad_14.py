@@ -56,18 +56,16 @@ while opcion != 4:
                 if not participantes:
                     print("No se ha agregado a ningún participante")
                     continue
-                nombre_ordenado = ordenar_nombre(list(participantes.values()))
-                print("Particpantes ordenados por nombre:")
-                for clave, datos in nombre_ordenado:
-                    print(f"{datos['nombre']}: (dorsal:{clave} edad: {datos['edad']}, categoría: {datos['categoria']}")
+                print("\nParticpantes ordenados por nombre:")
+                for i in ordenar_nombre(participantes):
+                    print(f"{i['nombre']}: (dorsal:{i['dorsal']} edad: {i['edad']}, categoría: {i['categoria']}")
             case 3:
-                if len(participantes) == 0:
+                if not participantes:
                     print("No se ha agregado a ningún participante")
                     continue
-                edad_ordenado = ordenar_edad(list(participantes.values()))
                 print("participantes ordenados por edad:")
-                for clave, datos in edad_ordenado:
-                    print(f"{datos['nombre']}: (dorsal:{clave} edad: {datos['edad']}, categoría: {datos['categoria']}")
+                for i in ordenar_edad(participantes):
+                    print(f"{i['nombre']}: (dorsal:{i['dorsla']} edad: {i['edad']}, categoría: {i['categoria']}")
             case 4:
                 print("Saliendo")
             case __:
